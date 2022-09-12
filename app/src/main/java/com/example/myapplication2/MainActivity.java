@@ -2,6 +2,7 @@ package com.example.myapplication2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -22,9 +23,11 @@ public class MainActivity extends AppCompatActivity {
     public void Click(View view) {
         textViewButton.setVisibility((textViewButton.getVisibility() == View.VISIBLE)
                 ? View.GONE : View.VISIBLE);
+        textViewButton.setTextColor(Color.BLUE);
 
         textViewAbove.setVisibility((textViewAbove.getVisibility() == View.VISIBLE)
                 ? View.GONE : View.VISIBLE);
+        textViewAbove.setTextColor(Color.RED);
 
     }
 }
